@@ -97,18 +97,20 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: EdgeInsets.all(10.0),
             alignment: Alignment.center,
           ),
-          Container(
-            padding: EdgeInsets.all(10.0),
-            width: 100.0,
-            height: 100.0,
-            color: Colors.yellow,
-            alignment:
-                AlignmentGeometry.lerp(Alignment.center, Alignment.center, 5.0),
-            child: Card(
-                //margin: EdgeInsetsGeometry.infinity,
-                child: Text("3",
-                    style: TextStyle(fontSize: 24.0, color: Colors.black))),
-          )
+          Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(15))),
+              //margin: EdgeInsetsGeometry.infinity,
+              color: Colors.yellowAccent,
+              child: SizedBox(
+                width: 100.0,
+                height: 100.0,
+                child: Text(
+                  "3",
+                  style: TextStyle(fontSize: 24.0, color: Colors.black),
+                  textAlign: TextAlign.center,
+                ),
+              )),
         ],
       ),
       floatingActionButton: FloatingActionButton(
