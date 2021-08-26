@@ -75,89 +75,181 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Column(
+      body: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        //crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Card(
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(15))),
-            //margin: EdgeInsetsGeometry.infinity,
-            color: Colors.yellowAccent,
-            child: Container(
-              width: 100.0,
-              height: 100.0,
-              alignment: Alignment.center,
-              child: Text(
-                "1",
-                style: TextStyle(fontSize: 24.0, color: Colors.black),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-          Card(
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(15))),
-            //margin: EdgeInsetsGeometry.infinity,
-            color: Colors.yellowAccent,
-            child: Container(
-              width: 100.0,
-              height: 100.0,
-              alignment: Alignment.center,
-              child: Text(
-                "2",
-                style: TextStyle(fontSize: 24.0, color: Colors.black),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-          Card(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(15))),
-              //margin: EdgeInsetsGeometry.infinity,
-              color: Colors.yellowAccent,
-              child: Container(
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
                   width: 100.0,
                   height: 100.0,
                   alignment: Alignment.center,
                   child: Text(
-                    "3",
+                    "1",
                     style: TextStyle(fontSize: 24.0, color: Colors.black),
                     textAlign: TextAlign.center,
                   ),
                 ),
               ),
-          Card(
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(15))),
-            //margin: EdgeInsetsGeometry.infinity,
-            color: Colors.yellowAccent,
-            child: Container(
-              width: 100.0,
-              height: 100.0,
-              alignment: Alignment.center,
-              child: Text(
-                "4",
-                style: TextStyle(fontSize: 24.0, color: Colors.black),
-                textAlign: TextAlign.center,
+              Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "2",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
               ),
-            ),
+              Card(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.yellowAccent,
+                  child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Text(
+                        "3",
+                        style: TextStyle(fontSize: 24.0, color: Colors.black),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+              Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "4",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+              Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "5",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+            ],
           ),
-          Card(
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(15))),
-            //margin: EdgeInsetsGeometry.infinity,
-            color: Colors.yellowAccent,
-            child: Container(
-              width: 100.0,
-              height: 100.0,
-              alignment: Alignment.center,
-              child: Text(
-                "5",
-                style: TextStyle(fontSize: 24.0, color: Colors.black),
-                textAlign: TextAlign.center,
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "6",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
               ),
-            ),
+              Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "7",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+              Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "8",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+              Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "9",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+              Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "10",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),
