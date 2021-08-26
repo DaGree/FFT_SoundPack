@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.yellowAccent,
+                color: Colors.white,
                 child: GestureDetector(
                   onTap: () {
                     print("Card 1 is active");
@@ -100,15 +100,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 100.0,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                        image: DecorationImage(
-                      image: NetworkImage(
-                          "https://s3.o7planning.com/images/tom-and-jerry.png"),
-                    )),
-                    child: Text(
-                      "1",
-                      style: TextStyle(fontSize: 24.0, color: Colors.black),
-                      textAlign: TextAlign.center,
                     ),
+                    child: Image.asset("assets/images/DaGree_Anime.png"),
                   ),
                 ),
               ),
@@ -370,7 +363,10 @@ class _MyHomePageState extends State<MyHomePage> {
         height: 20.0,
         alignment: Alignment.center,
         color: Colors.lightBlue[700],
-        child: Text("Demo FFT Sound Pack"),
+        child: Text(
+          "Demo FFT Sound Pack Version 1.0",
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
         //alignment: Alignment.bottomCenter,
       ),
     );
