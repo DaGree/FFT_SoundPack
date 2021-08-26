@@ -47,7 +47,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+ // int _counter = 0;
 
   void _incrementCounter() {
     setState(() {
@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
-      _counter++;
+     // _counter++;
     });
   }
 
@@ -77,40 +77,88 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            width: 100.0,
-            height: 100.0,
-            color: Colors.black,
-            margin: EdgeInsets.all(20.0),
-            alignment:
-                AlignmentGeometry.lerp(Alignment.center, Alignment.center, 5.0),
-            child: Text("1",
-                style: TextStyle(
-                    fontSize: 24.0,
-                    color: Colors.white)), //alignment: Alignment.center,
+          Card(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(15))),
+            //margin: EdgeInsetsGeometry.infinity,
+            color: Colors.yellowAccent,
+            child: Container(
+              width: 100.0,
+              height: 100.0,
+              alignment: Alignment.center,
+              child: Text(
+                "1",
+                style: TextStyle(fontSize: 24.0, color: Colors.black),
+                textAlign: TextAlign.center,
+              ),
+            ),
           ),
-          Container(
-            width: 100.0,
-            height: 100.0,
-            color: Colors.red,
-            padding: EdgeInsets.all(10.0),
-            alignment: Alignment.center,
+          Card(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(15))),
+            //margin: EdgeInsetsGeometry.infinity,
+            color: Colors.yellowAccent,
+            child: Container(
+              width: 100.0,
+              height: 100.0,
+              alignment: Alignment.center,
+              child: Text(
+                "2",
+                style: TextStyle(fontSize: 24.0, color: Colors.black),
+                textAlign: TextAlign.center,
+              ),
+            ),
           ),
           Card(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(15))),
               //margin: EdgeInsetsGeometry.infinity,
               color: Colors.yellowAccent,
-              child: SizedBox(
-                width: 100.0,
-                height: 100.0,
-                child: Text(
-                  "3",
-                  style: TextStyle(fontSize: 24.0, color: Colors.black),
-                  textAlign: TextAlign.center,
+              child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "3",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
-              )),
+              ),
+          Card(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(15))),
+            //margin: EdgeInsetsGeometry.infinity,
+            color: Colors.yellowAccent,
+            child: Container(
+              width: 100.0,
+              height: 100.0,
+              alignment: Alignment.center,
+              child: Text(
+                "4",
+                style: TextStyle(fontSize: 24.0, color: Colors.black),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Card(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(15))),
+            //margin: EdgeInsetsGeometry.infinity,
+            color: Colors.yellowAccent,
+            child: Container(
+              width: 100.0,
+              height: 100.0,
+              alignment: Alignment.center,
+              child: Text(
+                "5",
+                style: TextStyle(fontSize: 24.0, color: Colors.black),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
