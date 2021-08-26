@@ -47,7 +47,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
- // int _counter = 0;
+  // int _counter = 0;
 
   void _incrementCounter() {
     setState(() {
@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
-     // _counter++;
+      // _counter++;
     });
   }
 
@@ -69,8 +69,9 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
+      backgroundColor: Colors.lightBlue[50],
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.lightBlue[700],
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
@@ -84,22 +85,29 @@ class _MyHomePageState extends State<MyHomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Card(
+                elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.yellowAccent,
-                child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  alignment: Alignment.center,
-                  child: Text(
-                    "1",
-                    style: TextStyle(fontSize: 24.0, color: Colors.black),
-                    textAlign: TextAlign.center,
+                child: GestureDetector(
+                  onTap: () {
+                    print("Card 1 is active");
+                  },
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    alignment: Alignment.center,
+                    child: Text(
+                      "1",
+                      style: TextStyle(fontSize: 24.0, color: Colors.black),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                 ),
               ),
               Card(
+                elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
@@ -116,22 +124,24 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Card(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(15))),
-                  //margin: EdgeInsetsGeometry.infinity,
-                  color: Colors.yellowAccent,
-                  child: Container(
-                      width: 100.0,
-                      height: 100.0,
-                      alignment: Alignment.center,
-                      child: Text(
-                        "3",
-                        style: TextStyle(fontSize: 24.0, color: Colors.black),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
+                elevation: 15.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "3",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
                   ),
+                ),
+              ),
               Card(
+                elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
@@ -148,6 +158,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Card(
+                elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
@@ -170,6 +181,7 @@ class _MyHomePageState extends State<MyHomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Card(
+                elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
@@ -186,6 +198,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Card(
+                elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
@@ -202,6 +215,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Card(
+                elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
@@ -218,6 +232,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Card(
+                elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
@@ -234,6 +249,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Card(
+                elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
@@ -251,13 +267,99 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Card(
+                elevation: 15.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "11",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 15.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "12",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 15.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "13",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 15.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "14",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 15.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                //margin: EdgeInsetsGeometry.infinity,
+                color: Colors.yellowAccent,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "15",
+                    style: TextStyle(fontSize: 24.0, color: Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
