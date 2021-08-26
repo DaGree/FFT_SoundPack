@@ -70,6 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       backgroundColor: Colors.lightBlue[50],
+      endDrawer: Drawer(),
       appBar: AppBar(
         backgroundColor: Colors.lightBlue[700],
         // Here we take the value from the MyHomePage object that was created by
@@ -98,6 +99,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: 100.0,
                     height: 100.0,
                     alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                      image: NetworkImage(
+                          "https://s3.o7planning.com/images/tom-and-jerry.png"),
+                    )),
                     child: Text(
                       "1",
                       style: TextStyle(fontSize: 24.0, color: Colors.black),
@@ -359,6 +365,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ],
+      ),
+      bottomSheet: Container(
+        height: 20.0,
+        alignment: Alignment.center,
+        color: Colors.lightBlue[700],
+        child: Text("Demo FFT Sound Pack"),
+        //alignment: Alignment.bottomCenter,
       ),
     );
   }
