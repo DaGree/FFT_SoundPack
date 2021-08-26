@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -74,7 +75,27 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
+      body: Column(
+        children: [
+          Container(
+            width: 100.0,
+            height: 100.0,
+            color: Colors.black,
+            margin: EdgeInsets.all(20.0),
+            alignment: AlignmentGeometry.lerp(Alignment.center, Alignment.center, 5.0),
+            child: Text("1", style: TextStyle(fontSize: 24.0, color: Colors.white),), //alignment: Alignment.center,
+          ),
+          SizedBox(
+              //height: 20.0,
+              ),
+          Container(
+            width: 100.0,
+            height: 100.0,
+            color: Colors.red,
+            padding: EdgeInsets.all(10.0),
+            alignment: Alignment.center,
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
