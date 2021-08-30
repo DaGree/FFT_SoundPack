@@ -34,6 +34,14 @@ class _MyHomePageState extends State<MyHomePage> {
     player = AudioPlayer();
   }
 
+  void play() {
+    player.play();
+  }
+
+  void pause() {
+    player.pause();
+  }
+
   @override
   void dispose() {
     player.dispose();
@@ -59,26 +67,23 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              GestureDetector(
-                onTap: () async {
-                  await player.setAsset('assets/sounds/sound_test.mp3');
-                  player.stop();
-                },
-                child: Container(
-                  width: 110.0,
-                  height: 110.0,
-                  alignment: Alignment.center,
-                  child: Card(
-                    elevation: 15.0,
-                    borderOnForeground: true,
-                    semanticContainer: true,
-                    shape: RoundedRectangleBorder(
-                        side: BorderSide(color: Colors.white, width: 5.0),
-                        borderRadius: BorderRadius.all(Radius.circular(15))),
-                    //margin: EdgeInsetsGeometry.infinity,
-                    color: Colors.white,
-                    //decoration: BoxDecoration(),
-
+              Card(
+                elevation: 15.0,
+                borderOnForeground: true,
+                semanticContainer: true,
+                shape: RoundedRectangleBorder(
+                    side: BorderSide(color: Colors.white, width: 5.0),
+                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                color: Colors.white,
+                child: GestureDetector(
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
+                  },
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    alignment: Alignment.center,
                     child: Image.asset(
                       "assets/images/DaGree_Anime.png",
                       //fit: BoxFit.cover,
@@ -90,21 +95,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
-                //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
-                child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  alignment: Alignment.center,
-                  child: ElevatedButton(
-                      style: ButtonStyle(
-                          backgroundColor:
-                              MaterialStateProperty.all(Colors.white)),
-                      onPressed: () async {
-                        await player.setAsset('assets/sounds/sound_test.mp3');
-                        player.play();
-                      },
-                      child: Image.asset("assets/images/Misha_kid.png")),
+                child: GestureDetector(
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
+                  },
+                  onSecondaryTap: () async {
+                    await player.stop();
+                  },
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    alignment: Alignment.center,
+                    child: Image.asset("assets/images/Misha_kid.png"),
+                  ),
                 ),
               ),
               Card(
@@ -118,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     await player.setAsset('assets/sounds/sound_test.mp3');
                     player.play();
                   },
-                  onSecondaryTap: () async {
+                  onLongPress: () async {
                     await player.stop();
                   },
                   child: Container(
@@ -138,6 +143,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: GestureDetector(
                   onTap: () {
                     print("Card 4 is active");
+                  },
+                  onLongPress: (){
+                    print("Card 4 is active X2");
                   },
                   child: Container(
                     width: 100.0,
