@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:just_audio/just_audio.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,22 +23,28 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key, required this.title}) : super(key: key);
   final String title;
+
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  // int _counter = 0;
+  late AudioPlayer player;
 
-  // void _incrementCounter() {
-  //   setState(() {
-  //
-  //   });
-  // }
+  @override
+  void initState() {
+    super.initState();
+    player = AudioPlayer();
+  }
+
+  @override
+  void dispose() {
+    player.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       backgroundColor: Colors.lightBlue[50],
       endDrawer: Drawer(),
@@ -62,8 +69,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {
-                    print("Card 1 is active");
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
                   },
                   child: Container(
                     width: 100.0,
