@@ -12,9 +12,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'FFT',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: MyHomePage(title: 'FFT Sound Pack'),
     );
   }
@@ -63,22 +60,28 @@ class _MyHomePageState extends State<MyHomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Card(
-                elevation: 15.0,
+                elevation: 25.0,
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
+                    borderRadius: BorderRadius.all(Radius.circular(25))),
                 //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(),
-                    child: Image.asset("assets/images/DaGree_Anime.png"),
+                //decoration: BoxDecoration(),
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.white)),
+                    onPressed: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    child: Image.asset(
+                      "assets/images/DaGree_Anime.png",
+                      //fit: BoxFit.none,
+                    ),
                   ),
                 ),
               ),
@@ -96,7 +99,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: 100.0,
                     height: 100.0,
                     alignment: Alignment.center,
-                    child: Image.asset("assets/images/Misha_kid.png"),
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                            backgroundColor:
+                            MaterialStateProperty.all(Colors.white)),
+                        onPressed: () async {
+                          await player.setAsset('assets/sounds/sound_test.mp3');
+                          player.play();
+                        },
+                        child: Image.asset("assets/images/Misha_kid.png")),
                   ),
                 ),
               ),
