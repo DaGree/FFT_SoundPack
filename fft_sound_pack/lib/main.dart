@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'FFT',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.lightBlue[50],
       endDrawer: Drawer(),
       appBar: AppBar(
-        backgroundColor: Colors.lightBlue[700],
+        backgroundColor: Colors.red[700],
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
@@ -157,15 +157,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.yellowAccent,
-                child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  alignment: Alignment.center,
-                  child: Text(
-                    "6",
-                    style: TextStyle(fontSize: 24.0, color: Colors.black),
-                    textAlign: TextAlign.center,
+                color: Colors.white,
+                child: GestureDetector(
+                  onTap: () {
+                    print("Card 6 is active");
+                  },
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(),
+                    child: Image.asset("assets/images/DaGree_wtf.png"),
                   ),
                 ),
               ),
@@ -174,15 +176,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.yellowAccent,
-                child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  alignment: Alignment.center,
-                  child: Text(
-                    "7",
-                    style: TextStyle(fontSize: 24.0, color: Colors.black),
-                    textAlign: TextAlign.center,
+                color: Colors.white,
+                child: GestureDetector(
+                  onTap: () {
+                    print("Card 7 is active");
+                  },
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    alignment: Alignment.center,
+                    child: Image.asset("assets/images/Misha_fat.png"),
                   ),
                 ),
               ),
@@ -191,15 +194,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.yellowAccent,
-                child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  alignment: Alignment.center,
-                  child: Text(
-                    "8",
-                    style: TextStyle(fontSize: 24.0, color: Colors.black),
-                    textAlign: TextAlign.center,
+                color: Colors.white,
+                child: GestureDetector(
+                  onTap: () {
+                    print("Card 8 is active");
+                  },
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    alignment: Alignment.center,
+                    child: Image.asset("assets/images/Xomyak_cringe.png"),
                   ),
                 ),
               ),
@@ -208,15 +212,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.yellowAccent,
-                child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  alignment: Alignment.center,
-                  child: Text(
-                    "9",
-                    style: TextStyle(fontSize: 24.0, color: Colors.black),
-                    textAlign: TextAlign.center,
+                color: Colors.white,
+                child: GestureDetector(
+                  onTap: () {
+                    print("Card 9 is active");
+                  },
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    alignment: Alignment.center,
+                    child: Image.asset("assets/images/zwitter_drink.png"),
                   ),
                 ),
               ),
@@ -225,15 +230,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.yellowAccent,
-                child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  alignment: Alignment.center,
-                  child: Text(
-                    "10",
-                    style: TextStyle(fontSize: 24.0, color: Colors.black),
-                    textAlign: TextAlign.center,
+                color: Colors.white,
+                child: GestureDetector(
+                  onTap: () {
+                    print("Card 10 is active");
+                  },
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    alignment: Alignment.center,
+                    child: Image.asset("assets/images/pajiloy.png"),
                   ),
                 ),
               ),
@@ -248,15 +254,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.yellowAccent,
-                child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  alignment: Alignment.center,
-                  child: Text(
-                    "11",
-                    style: TextStyle(fontSize: 24.0, color: Colors.black),
-                    textAlign: TextAlign.center,
+                color: Colors.white,
+                child: GestureDetector(
+                  onTap: () {
+                    print("Card 11 is active");
+                  },
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(),
+                    child: Image.asset("assets/images/Xomyak_pogChamp.png"),
                   ),
                 ),
               ),
@@ -265,15 +273,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.yellowAccent,
-                child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  alignment: Alignment.center,
-                  child: Text(
-                    "12",
-                    style: TextStyle(fontSize: 24.0, color: Colors.black),
-                    textAlign: TextAlign.center,
+                color: Colors.white,
+                child: GestureDetector(
+                  onTap: () {
+                    print("Card 12 is active");
+                  },
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    alignment: Alignment.center,
+                    child: Image.asset("assets/images/misha_anime.png"),
                   ),
                 ),
               ),
@@ -282,15 +291,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.yellowAccent,
-                child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  alignment: Alignment.center,
-                  child: Text(
-                    "13",
-                    style: TextStyle(fontSize: 24.0, color: Colors.black),
-                    textAlign: TextAlign.center,
+                color: Colors.white,
+                child: GestureDetector(
+                  onTap: () {
+                    print("Card 13 is active");
+                  },
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    alignment: Alignment.center,
+                    child: Image.asset("assets/images/Xomyak_eye.png"),
                   ),
                 ),
               ),
@@ -299,15 +309,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.yellowAccent,
-                child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  alignment: Alignment.center,
-                  child: Text(
-                    "14",
-                    style: TextStyle(fontSize: 24.0, color: Colors.black),
-                    textAlign: TextAlign.center,
+                color: Colors.white,
+                child: GestureDetector(
+                  onTap: () {
+                    print("Card 14 is active");
+                  },
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    alignment: Alignment.center,
+                    child: Image.asset("assets/images/Horse.png"),
                   ),
                 ),
               ),
@@ -316,15 +327,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.yellowAccent,
-                child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  alignment: Alignment.center,
-                  child: Text(
-                    "15",
-                    style: TextStyle(fontSize: 24.0, color: Colors.black),
-                    textAlign: TextAlign.center,
+                color: Colors.white,
+                child: GestureDetector(
+                  onTap: () {
+                    print("Card 15 is active");
+                  },
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    alignment: Alignment.center,
+                    child: Image.asset("assets/images/DaGree_thick.png"),
                   ),
                 ),
               ),
@@ -335,7 +347,7 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomSheet: Container(
         height: 20.0,
         alignment: Alignment.center,
-        color: Colors.lightBlue[700],
+        color: Colors.red[700],
         child: Text(
           "Demo FFT Sound Pack Version 1.0",
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
