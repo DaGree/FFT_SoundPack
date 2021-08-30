@@ -80,6 +80,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     await player.setAsset('assets/sounds/sound_test.mp3');
                     player.play();
                   },
+                  onLongPress: () async {
+                    await player.stop();
+                  },
                   child: Container(
                     width: 100.0,
                     height: 100.0,
@@ -101,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     await player.setAsset('assets/sounds/sound_test.mp3');
                     player.play();
                   },
-                  onSecondaryTap: () async {
+                  onLongPress: () async {
                     await player.stop();
                   },
                   child: Container(
@@ -141,11 +144,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {
-                    print("Card 4 is active");
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
                   },
-                  onLongPress: (){
-                    print("Card 4 is active X2");
+                  onLongPress: () async {
+                    await player.stop();
                   },
                   child: Container(
                     width: 100.0,
@@ -162,8 +166,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {
-                    print("Card 5 is active");
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
+                  },
+                  onLongPress: () async {
+                    await player.stop();
                   },
                   child: Container(
                     width: 100.0,
@@ -186,8 +194,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {
-                    print("Card 6 is active");
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
+                  },
+                  onLongPress: () async {
+                    await player.stop();
                   },
                   child: Container(
                     width: 100.0,
@@ -205,8 +217,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {
-                    print("Card 7 is active");
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
+                  },
+                  onLongPress: () async {
+                    await player.stop();
                   },
                   child: Container(
                     width: 100.0,
@@ -220,11 +236,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
-                //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {
-                    print("Card 8 is active");
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
+                  },
+                  onLongPress: () async {
+                    await player.stop();
                   },
                   child: Container(
                     width: 100.0,
@@ -238,11 +257,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
-                //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {
-                    print("Card 9 is active");
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
+                  },
+                  onLongPress: () async {
+                    await player.stop();
                   },
                   child: Container(
                     width: 100.0,
@@ -256,11 +278,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
-                //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {
-                    print("Card 10 is active");
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
+                  },
+                  onLongPress: () async {
+                    await player.stop();
                   },
                   child: Container(
                     width: 100.0,
@@ -280,11 +305,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
-                //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {
-                    print("Card 11 is active");
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
+                  },
+                  onLongPress: () async {
+                    await player.stop();
                   },
                   child: Container(
                     width: 100.0,
@@ -299,11 +327,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
-                //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {
-                    print("Card 12 is active");
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
+                  },
+                  onLongPress: () async {
+                    await player.stop();
                   },
                   child: Container(
                     width: 100.0,
@@ -317,11 +348,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
-                //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {
-                    print("Card 13 is active");
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
+                  },
+                  onLongPress: () async {
+                    await player.stop();
                   },
                   child: Container(
                     width: 100.0,
@@ -338,8 +372,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {
-                    print("Card 14 is active");
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
+                  },
+                  onLongPress: () async {
+                    await player.stop();
                   },
                   child: Container(
                     width: 100.0,
@@ -353,11 +391,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 elevation: 15.0,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15))),
-                //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {
-                    print("Card 15 is active");
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
+                  },
+                  onLongPress: () async {
+                    await player.stop();
                   },
                   child: Container(
                     width: 100.0,
