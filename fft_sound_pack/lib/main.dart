@@ -59,28 +59,29 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Card(
-                elevation: 25.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(25))),
-                //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.white,
-                //decoration: BoxDecoration(),
+              GestureDetector(
+                onTap: () async {
+                  await player.setAsset('assets/sounds/sound_test.mp3');
+                  player.stop();
+                },
                 child: Container(
-                  width: 100.0,
-                  height: 100.0,
+                  width: 110.0,
+                  height: 110.0,
                   alignment: Alignment.center,
-                  child: ElevatedButton(
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.white)),
-                    onPressed: () async {
-                      await player.setAsset('assets/sounds/sound_test.mp3');
-                      player.play();
-                    },
+                  child: Card(
+                    elevation: 15.0,
+                    borderOnForeground: true,
+                    semanticContainer: true,
+                    shape: RoundedRectangleBorder(
+                        side: BorderSide(color: Colors.white, width: 5.0),
+                        borderRadius: BorderRadius.all(Radius.circular(15))),
+                    //margin: EdgeInsetsGeometry.infinity,
+                    color: Colors.white,
+                    //decoration: BoxDecoration(),
+
                     child: Image.asset(
                       "assets/images/DaGree_Anime.png",
-                      //fit: BoxFit.none,
+                      //fit: BoxFit.cover,
                     ),
                   ),
                 ),
@@ -91,24 +92,19 @@ class _MyHomePageState extends State<MyHomePage> {
                     borderRadius: BorderRadius.all(Radius.circular(15))),
                 //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
-                child: GestureDetector(
-                  onTap: () {
-                    print("Card 2 is active");
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    child: ElevatedButton(
-                        style: ButtonStyle(
-                            backgroundColor:
-                            MaterialStateProperty.all(Colors.white)),
-                        onPressed: () async {
-                          await player.setAsset('assets/sounds/sound_test.mp3');
-                          player.play();
-                        },
-                        child: Image.asset("assets/images/Misha_kid.png")),
-                  ),
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  alignment: Alignment.center,
+                  child: ElevatedButton(
+                      style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.white)),
+                      onPressed: () async {
+                        await player.setAsset('assets/sounds/sound_test.mp3');
+                        player.play();
+                      },
+                      child: Image.asset("assets/images/Misha_kid.png")),
                 ),
               ),
               Card(
@@ -118,8 +114,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 //margin: EdgeInsetsGeometry.infinity,
                 color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {
-                    print("Card 3 is active");
+                  onTap: () async {
+                    await player.setAsset('assets/sounds/sound_test.mp3');
+                    player.play();
+                  },
+                  onSecondaryTap: () async {
+                    await player.stop();
                   },
                   child: Container(
                     width: 100.0,
