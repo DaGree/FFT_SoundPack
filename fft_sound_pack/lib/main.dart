@@ -59,358 +59,690 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        //crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Card(
-                elevation: 15.0,
-                borderOnForeground: true,
-                semanticContainer: true,
-                shape: RoundedRectangleBorder(
-                    side: BorderSide(color: Colors.white, width: 5.0),
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    child: Image.asset(
-                      "assets/images/DaGree_Anime.png",
-                      //fit: BoxFit.cover,
+      body: SingleChildScrollView(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Card(
+                  elevation: 15.0,
+                  borderOnForeground: true,
+                  semanticContainer: true,
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(color: Colors.white, width: 5.0),
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset(
+                        "assets/images/DaGree_Anime.png",
+                        //fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
-              ),
-              Card(
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    child: Image.asset("assets/images/Misha_kid.png"),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Misha_kid.png"),
+                    ),
                   ),
                 ),
-              ),
-              Card(
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    child: Image.asset("assets/images/Xomyak_brutal.png"),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Xomyak_brutal.png"),
+                    ),
                   ),
                 ),
-              ),
-              Card(
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    child: Image.asset("assets/images/zwitter_danger.png"),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/zwitter_danger.png"),
+                    ),
                   ),
                 ),
-              ),
-              Card(
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    child: Image.asset("assets/images/Decoy_what.png"),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Decoy_what.png"),
+                    ),
                   ),
                 ),
-              ),
-            ],
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Card(
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(),
-                    child: Image.asset("assets/images/DaGree_wtf.png"),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Decoy_what.png"),
+                    ),
                   ),
                 ),
-              ),
-              Card(
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    child: Image.asset("assets/images/Misha_fat.png"),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Xomyak_brutal.png"),
+                    ),
                   ),
                 ),
-              ),
-              Card(
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    child: Image.asset("assets/images/Xomyak_cringe.png"),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/zwitter_danger.png"),
+                    ),
                   ),
                 ),
-              ),
-              Card(
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    child: Image.asset("assets/images/zwitter_drink.png"),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Decoy_what.png"),
+                    ),
                   ),
                 ),
-              ),
-              Card(
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    child: Image.asset("assets/images/pajiloy.png"),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Decoy_what.png"),
+                    ),
                   ),
                 ),
-              ),
-            ],
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Card(
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(),
-                    child: Image.asset("assets/images/Xomyak_pogChamp.png"),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(),
+                      child: Image.asset("assets/images/DaGree_wtf.png"),
+                    ),
                   ),
                 ),
-              ),
-              Card(
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    child: Image.asset("assets/images/misha_anime.png"),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Misha_fat.png"),
+                    ),
                   ),
                 ),
-              ),
-              Card(
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    child: Image.asset("assets/images/Xomyak_eye.png"),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Xomyak_cringe.png"),
+                    ),
                   ),
                 ),
-              ),
-              Card(
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                //margin: EdgeInsetsGeometry.infinity,
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    child: Image.asset("assets/images/Horse.png"),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/zwitter_drink.png"),
+                    ),
                   ),
                 ),
-              ),
-              Card(
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                color: Colors.white,
-                child: GestureDetector(
-                  onTap: () async {
-                    await player.setAsset('assets/sounds/sound_test.mp3');
-                    player.play();
-                  },
-                  onLongPress: () async {
-                    await player.stop();
-                  },
-                  child: Container(
-                    width: 100.0,
-                    height: 100.0,
-                    alignment: Alignment.center,
-                    child: Image.asset("assets/images/DaGree_thick.png"),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/pajiloy.png"),
+                    ),
                   ),
                 ),
-              ),
-            ],
-          ),
-        ],
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Decoy_what.png"),
+                    ),
+                  ),
+                ),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Xomyak_brutal.png"),
+                    ),
+                  ),
+                ),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/zwitter_danger.png"),
+                    ),
+                  ),
+                ),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Decoy_what.png"),
+                    ),
+                  ),
+                ),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Decoy_what.png"),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(),
+                      child: Image.asset("assets/images/Xomyak_pogChamp.png"),
+                    ),
+                  ),
+                ),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/misha_anime.png"),
+                    ),
+                  ),
+                ),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Xomyak_eye.png"),
+                    ),
+                  ),
+                ),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Horse.png"),
+                    ),
+                  ),
+                ),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/DaGree_thick.png"),
+                    ),
+                  ),
+                ),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Decoy_what.png"),
+                    ),
+                  ),
+                ),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Xomyak_brutal.png"),
+                    ),
+                  ),
+                ),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/zwitter_danger.png"),
+                    ),
+                  ),
+                ),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Decoy_what.png"),
+                    ),
+                  ),
+                ),
+                Card(
+                  elevation: 15.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  //margin: EdgeInsetsGeometry.infinity,
+                  color: Colors.white,
+                  child: GestureDetector(
+                    onTap: () async {
+                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      player.play();
+                    },
+                    onLongPress: () async {
+                      await player.stop();
+                    },
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/images/Decoy_what.png"),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
       bottomSheet: Container(
         height: 20.0,
