@@ -713,7 +713,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 100.0,
                       height: 100.0,
                       alignment: Alignment.center,
-                      child: Image.asset("assets/images/Decoy_what.png"),
+                      child: Image.asset("assets/images/misha_anime.png"),
                     ),
                   ),
                 ),
