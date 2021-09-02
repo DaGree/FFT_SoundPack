@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fft_sound_pack">
    <application
-        android:label="fft_sound_pack"
+        android:label="FFT Sound Pack"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
