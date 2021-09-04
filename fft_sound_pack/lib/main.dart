@@ -534,7 +534,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.white,
                   child: GestureDetector(
                     onTap: () async {
-                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      await player.setAsset('assets/sounds/danya_komp_govno_sound.mp3');
                       player.play();
                     },
                     onLongPress: () async {
@@ -545,7 +545,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       height: 100.0,
                       alignment: Alignment.center,
                       decoration: BoxDecoration(),
-                      child: Image.asset("assets/images/Xomyak_pogChamp.png"),
+                      child: Image.asset("assets/images/danya_komp_govno_image.png"),
                     ),
                   ),
                 ),
@@ -556,7 +556,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.white,
                   child: GestureDetector(
                     onTap: () async {
-                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      await player.setAsset('assets/sounds/danya_like_sound.mp3');
                       player.play();
                     },
                     onLongPress: () async {
@@ -566,7 +566,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 100.0,
                       height: 100.0,
                       alignment: Alignment.center,
-                      child: Image.asset("assets/images/misha_anime.png"),
+                      child: Image.asset("assets/images/danya_like_image.png"),
                     ),
                   ),
                 ),
@@ -577,7 +577,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.white,
                   child: GestureDetector(
                     onTap: () async {
-                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      await player.setAsset('assets/sounds/danya_oskorbil_sound.mp3');
                       player.play();
                     },
                     onLongPress: () async {
@@ -587,7 +587,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 100.0,
                       height: 100.0,
                       alignment: Alignment.center,
-                      child: Image.asset("assets/images/Xomyak_eye.png"),
+                      child: Image.asset("assets/images/danya_oskorbil_image.png"),
                     ),
                   ),
                 ),
@@ -599,7 +599,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.white,
                   child: GestureDetector(
                     onTap: () async {
-                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      await player.setAsset('assets/sounds/danya_podtv_sound.mp3');
                       player.play();
                     },
                     onLongPress: () async {
@@ -620,7 +620,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.white,
                   child: GestureDetector(
                     onTap: () async {
-                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      await player.setAsset('assets/sounds/danya_ustal_sound.mp3');
                       player.play();
                     },
                     onLongPress: () async {
@@ -630,7 +630,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 100.0,
                       height: 100.0,
                       alignment: Alignment.center,
-                      child: Image.asset("assets/images/DaGree_thick.png"),
+                      child: Image.asset("assets/images/DaGree_Driver.png"),
                     ),
                   ),
                 ),
@@ -642,7 +642,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.white,
                   child: GestureDetector(
                     onTap: () async {
-                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      await player.setAsset('assets/sounds/misha_dalnoboyshik_sound.mp3');
                       player.play();
                     },
                     onLongPress: () async {
@@ -652,7 +652,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 100.0,
                       height: 100.0,
                       alignment: Alignment.center,
-                      child: Image.asset("assets/images/Decoy_what.png"),
+                      child: Image.asset("assets/images/misha_anime.png"),
                     ),
                   ),
                 ),
@@ -664,7 +664,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.white,
                   child: GestureDetector(
                     onTap: () async {
-                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      await player.setAsset('assets/sounds/misha_osujday_sound.mp3');
                       player.play();
                     },
                     onLongPress: () async {
@@ -674,7 +674,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 100.0,
                       height: 100.0,
                       alignment: Alignment.center,
-                      child: Image.asset("assets/images/Xomyak_brutal.png"),
+                      child: Image.asset("assets/images/Misha_kid.png"),
                     ),
                   ),
                 ),
@@ -686,7 +686,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.white,
                   child: GestureDetector(
                     onTap: () async {
-                      await player.setAsset('assets/sounds/sound_test.mp3');
+                      await player.setAsset('assets/sounds/misha_soshkil_sound.mp3');
                       player.play();
                     },
                     onLongPress: () async {
@@ -696,7 +696,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 100.0,
                       height: 100.0,
                       alignment: Alignment.center,
-                      child: Image.asset("assets/images/zwitter_danger.png"),
+                      child: Image.asset("assets/images/Misha_kid.png"),
                     ),
                   ),
                 ),
